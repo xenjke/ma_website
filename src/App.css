@@ -1,38 +1,149 @@
 .App {
+  height: 812px;
+  max-width: 720px;
+  margin: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+img > .background {
+  width: 100vw;
+  height: calc(100vw - 100px);
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.gullLogoWrapper {
+  height: 320px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: scale(1);
+  padding-top: 20px;
+}
+
+.gullLogo {
+  margin-top: 0px;
+}
+
+.ma_title {
+  width: 50%;
+  float: left;
+}
+
+.ma_links {
+  width: 50%;
+  float: right;
+}
+
+.ma_title hr {
+  float: right;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #000;
+  width: 30px;
+}
+
+.ma_title p {
+  text-align: right;
+  margin: 0;
+  font-family: "Arial";
+  font-size: 10px;
+  /* letter-spacing: 1px; */
+  /* line-height: 10px; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-right: 30px;
+}
+
+.ma_title_line_wrapper {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ma_title_line {
+  height: 10px;
+  border-top: 1px solid black;
+  margin-left: -103px;
+  margin-right: auto;
+  padding-bottom: 45px;
+  width: 43px;
+  display: inline-block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ma_links ul {
+  list-style: none;
+  padding-left: 10px;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.ma_links p {
+  text-align: left;
+  margin: 0;
+  font-family: "Arial";
+  font-weight: bold;
+  font-size: 15px;
+  /* letter-spacing: 1px; */
+  line-height: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-link {
-  color: #61dafb;
+.ma_social {
+  height: 35px;
+  width: 100%;
+  float: left;
+  clear: left;
+  text-align: center;
+  margin-top: 55px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ma_social img {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 20px;
+}
+
+#rectangle {
+  width: 10px;
+  height: 10px;
+  margin-left: auto;
+  margin-right: 25px;
+  background: black;
+}
+
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+.fade_in {
+  opacity: 1;
+  transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -webkit-transition: opacity 0.25s ease-in-out;
+}
+
+.faded {
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -webkit-transition: opacity 0.25s ease-in-out;
 }

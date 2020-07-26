@@ -1,0 +1,16 @@
+шрифт: Arial (regular & bold)
+размер: 6
+расстояние между символами (трекинг): 10
+
+Mango Alley
+
+Our music is good for any weather, any timezone and any season.
+
+
+шрифт: Arial bold
+размер: 9
+расстояние между символами (трекинг): 10
+отступ между строчками: 2.4
+/ BANDCAMP
+/ SPOTIFY
+/ BEATPORT
