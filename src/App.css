@@ -82,6 +82,10 @@ html {
   margin: 0;
 }
 
+.ma_links a {
+  color: black;
+}
+
 .ma_links p {
   text-align: left;
   margin: 0;

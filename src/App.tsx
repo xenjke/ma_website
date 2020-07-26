@@ -2,7 +2,6 @@ import React from 'react';
 import Imgix from "react-imgix";
 import { Background } from 'react-imgix'
 import './App.css';
-import { url } from 'inspector';
 
 import BackgroundImage1 from './assets/eberhard-grossgasteiger-1435104-unsplash.jpg'
 import BackgroundImage2 from './assets/eberhard-grossgasteiger-1096581-unsplash.jpg'
@@ -25,7 +24,7 @@ const BackgroundImage = backgroundImages[Math.floor((Math.random() * backgroundI
 function App() {
   return (
     <Background src={BackgroundImage}
-      className="appBackground fade_in faded"
+      className="appBackground fade_in"
       htmlAttributes={{
         onLoad: () => helpers.handleImgOnLoad(),
       }}
