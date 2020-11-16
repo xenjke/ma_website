@@ -1,29 +1,24 @@
 import React from 'react';
 // import Imgix from "react-imgix";
-import { Background } from 'react-imgix'
+import { Background } from 'react-imgix';
 import './App.css';
 
-import BackgroundImage1 from './assets/eberhard-grossgasteiger-1435104-unsplash.jpg'
-import BackgroundImage2 from './assets/eberhard-grossgasteiger-1096581-unsplash.jpg'
-import BackgroundImage3 from './assets/eberhard-grossgasteiger-1441879-unsplash.jpg'
-
-import FacebookIcon from './assets/iconmonstr-facebook-5-240.png'
-import InstagramIcon from './assets/iconmonstr-instagram-14-240.png'
-import SoundcloudIcon from './assets/iconmonstr-soundcloud-4-240.png'
-import TwitterIcon from './assets/iconmonstr-twitter-5-240.png'
-import YoutubeIcon from './assets/iconmonstr-youtube-9-240.png'
+import {
+  FacebookIcon,
+  InstagramIcon,
+  SoundcloudIcon,
+  TwitterIcon,
+  YoutubeIcon
+} from './socialIcons';
 
 import gullLogo from './assets/MA_Seagull_Black.png';
 
 import { helpers } from './helpers';
-
-const backgroundImages = [BackgroundImage1, BackgroundImage2, BackgroundImage3];
-const BackgroundImage = backgroundImages[Math.floor((Math.random() * backgroundImages.length))];
-
+import { timeMappedWallpaper } from './timeMappedWallpaper';
 
 function App() {
   return (
-    <Background src={BackgroundImage}
+    <Background src={timeMappedWallpaper()}
       className="appBackground fade_in"
       htmlAttributes={{
         onLoad: () => helpers.handleImgOnLoad(),

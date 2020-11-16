@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - master
-      - build_remote
 
 jobs:
   release:
