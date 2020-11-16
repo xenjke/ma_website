@@ -1,5 +1,5 @@
 import React from 'react';
-import Imgix from "react-imgix";
+// import Imgix from "react-imgix";
 import { Background } from 'react-imgix'
 import './App.css';
 
