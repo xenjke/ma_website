@@ -16,11 +16,16 @@ describe("#partOfTheDay", () => {
             //@ts-ignore
             .mockImplementation(() => mockDate)
 
-        expect(partOfTheDay()).toEqual(DayPart.night)
+        expect(partOfTheDay()).toEqual(DayPart.sunset)
     });
 
-    it('sunrise', () => {
-        let date = new Date(1995, 11, 17, 4, 24, 0)
+    it('sunrise after 6am', () => {
+        let date = new Date(1995, 11, 17, 6, 24, 0)
+        expect(partOfTheDay(date)).toEqual(DayPart.sunrise)
+    });
+
+    it('sunrise after 8am', () => {
+        let date = new Date(1995, 11, 17, 8, 24, 0)
         expect(partOfTheDay(date)).toEqual(DayPart.sunrise)
     });
 

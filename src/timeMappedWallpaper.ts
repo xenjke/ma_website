@@ -31,10 +31,17 @@ function timeMappedWallpaper(): string {
 function partOfTheDay(date = new Date()): DayPart {
     const currentHours = date.getHours();
 
-    if (currentHours >= 21 || currentHours < 4) { return DayPart.night }
-    if (currentHours >= 4 && currentHours < 7) { return DayPart.sunrise }
-    if (currentHours >= 7 && currentHours < 18) { return DayPart.daytime }
-    if (currentHours >= 18 && currentHours < 21) { return DayPart.sunset }
+    // 6AM - 8AM - sunrise
+    // 8AM - 10AM - morning
+    // 10AM - 5PM - daytime
+    // 5PM - 9PM - evening
+    // 9PM - 11PM - sunset
+    // 11PM - 6AM - night
+
+    if (currentHours >= 23 || currentHours < 6) { return DayPart.night }
+    if (currentHours >= 6 && currentHours < 10) { return DayPart.sunrise }
+    if (currentHours >= 10 && currentHours < 17) { return DayPart.daytime }
+    if (currentHours >= 17 && currentHours < 23) { return DayPart.sunset }
 
     // default to daytime
     return DayPart.daytime
