@@ -8,6 +8,9 @@ const handleImgOnLoad = () => {
     // element.style.opacity = '1';
 }
 
+const siteUrl = 'http://mangoalleywebsite.s3-website.eu-west-2.amazonaws.com'
+
 export const helpers = {
-    handleImgOnLoad
+    handleImgOnLoad,
+    siteUrl
 }
