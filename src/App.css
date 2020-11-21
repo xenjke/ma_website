@@ -5,6 +5,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
 img > .background {
@@ -20,6 +26,7 @@ html {
 
 .gullLogoWrapper {
   height: 400px;
+  width: 100%;
   background-position: top;
   background-repeat: no-repeat;
   transform: scale(1);
@@ -30,6 +37,7 @@ html {
 @media (max-width: 900px) {
   .gullLogoWrapper {
     height: 320px;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover !important;
@@ -44,16 +52,14 @@ html {
 
 .ma_title {
   width: 50%;
-  float: left;
+  padding-right: 30px;
 }
 
 .ma_links {
   width: 50%;
-  float: right;
 }
 
 .ma_title hr {
-  float: right;
   display: block;
   height: 1px;
   border: 0;
@@ -70,7 +76,6 @@ html {
   /* line-height: 10px; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding-right: 30px;
 }
 
 .ma_title_line_wrapper {
@@ -80,11 +85,15 @@ html {
 .ma_title_line {
   height: 10px;
   border-top: 1px solid black;
-  margin-left: -103px;
+  margin-left: -77px;
   margin-right: auto;
   padding-bottom: 45px;
   width: 43px;
   display: inline-block;
+}
+
+.textContent {
+  display: flex;
 }
 
 .ma_links ul {
@@ -112,15 +121,21 @@ html {
 .ma_social {
   height: 35px;
   width: 100%;
-  float: left;
   clear: left;
   text-align: center;
   margin-top: 55px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
 }
 
 .ma_social img {
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.ma_social a {
   -webkit-transition: 200ms -webkit-filter linear;
   -moz-transition: 200ms -moz-filter linear;
   -moz-transition: 200ms filter linear;
@@ -129,7 +144,7 @@ html {
   transition: 200ms filter linear, 200ms -webkit-filter linear;
 }
 
-.ma_social:hover img {
+.ma_social:hover a {
   filter: invert(100%);
 }
 

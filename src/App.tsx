@@ -31,34 +31,36 @@ function App() {
         <div className="ma_title_line_wrapper">
           <div className="ma_title_line" />
         </div>
-        <div className="ma_title">
-          <p><strong>Mango Alley</strong></p>
-          <p>Our music is good for</p>
-          <p>any weather, any</p>
-          <p>timezone and any</p>
-          <p>season.</p>
-        </div>
-        <div className="ma_links">
-          <ul>
-            <li>
-              <a href={'https://themangoalley.bandcamp.com'}
-                target={"_blank"}
-                rel={"noopener noreferrer"}
-              ><p>/&nbsp;BANDCAMP</p></a>
-            </li>
-            <li>
-              <a href={'https://open.spotify.com/artist/5IJu5Seoth5ZJ4NomGtxwQ'}
-                target={"_blank"}
-                rel={"noopener noreferrer"}
-              ><p>/&nbsp;SPOTIFY</p></a>
-            </li>
-            <li>
-              <a href={'https://www.beatport.com/label/mango-alley/11276'}
-                target={"_blank"}
-                rel={"noopener noreferrer"}
-              ><p>/&nbsp;BEATPORT</p></a>
-            </li>
-          </ul>
+        <div className="textContent">
+          <div className="ma_title">
+            <p><strong>Mango Alley</strong></p>
+            <p>Our music is good for</p>
+            <p>any weather, any</p>
+            <p>timezone and any</p>
+            <p>season.</p>
+          </div>
+          <div className="ma_links">
+            <ul>
+              <li>
+                <a href={'https://themangoalley.bandcamp.com'}
+                  target={"_blank"}
+                  rel={"noopener noreferrer"}
+                ><p>/&nbsp;BANDCAMP</p></a>
+              </li>
+              <li>
+                <a href={'https://open.spotify.com/artist/5IJu5Seoth5ZJ4NomGtxwQ'}
+                  target={"_blank"}
+                  rel={"noopener noreferrer"}
+                ><p>/&nbsp;SPOTIFY</p></a>
+              </li>
+              <li>
+                <a href={'https://www.beatport.com/label/mango-alley/11276'}
+                  target={"_blank"}
+                  rel={"noopener noreferrer"}
+                ><p>/&nbsp;BEATPORT</p></a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div className="ma_social">
           <a href={'https://facebook.com/themangoalley'}
