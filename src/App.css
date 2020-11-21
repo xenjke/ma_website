@@ -119,9 +119,18 @@ html {
 }
 
 .ma_social img {
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  -webkit-transition: 200ms -webkit-filter linear;
+  -moz-transition: 200ms -moz-filter linear;
+  -moz-transition: 200ms filter linear;
+  -ms-transition: 200ms -ms-filter linear;
+  -o-transition: 200ms -o-filter linear;
+  transition: 200ms filter linear, 200ms -webkit-filter linear;
+}
+
+.ma_social:hover img {
+  filter: invert(100%);
 }
 
 #rectangle {
