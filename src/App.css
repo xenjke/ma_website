@@ -1,16 +1,3 @@
-/* mobile overrides */
-@media (max-width: 1000px) {
-  .gullLogoWrapper {
-    height: 320px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transform: scale(1);
-    padding-top: 20px;
-  }
-}
-
-/* desktop */
 .App {
   height: 812px;
   max-width: 720px;
@@ -35,9 +22,20 @@ html {
   height: 400px;
   background-position: top;
   background-repeat: no-repeat;
-  background-size: cover;
   transform: scale(1);
   padding-top: 20px;
+  background-size: contain !important;
+}
+
+@media (max-width: 900px) {
+  .gullLogoWrapper {
+    height: 320px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    transform: scale(1);
+    padding-top: 20px;
+  }
 }
 
 .gullLogo {
