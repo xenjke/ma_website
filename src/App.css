@@ -1,3 +1,16 @@
+/* mobile overrides */
+@media (max-width: 1000px) {
+  .gullLogoWrapper {
+    height: 320px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scale(1);
+    padding-top: 20px;
+  }
+}
+
+/* desktop */
 .App {
   height: 812px;
   max-width: 720px;
@@ -19,8 +32,8 @@ html {
 }
 
 .gullLogoWrapper {
-  height: 320px;
-  background-position: center;
+  height: 400px;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   transform: scale(1);
@@ -78,7 +91,7 @@ html {
 
 .ma_links ul {
   list-style: none;
-  padding-left: 10px;
+  padding-left: 12px;
   margin: 0;
 }
 
@@ -88,7 +101,7 @@ html {
 
 .ma_links p {
   text-align: left;
-  margin: 0;
+  margin: -3px;
   font-family: "Arial";
   font-weight: bold;
   font-size: 15px;
@@ -150,4 +163,8 @@ a:active {
   transition: opacity 0.25s ease-in-out;
   -moz-transition: opacity 0.25s ease-in-out;
   -webkit-transition: opacity 0.25s ease-in-out;
+}
+
+.appBackground {
+  background-position: center;
 }
