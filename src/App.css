@@ -135,7 +135,7 @@ html {
   margin-right: 10px;
 }
 
-.ma_social a {
+.ma_social img {
   -webkit-transition: 200ms -webkit-filter linear;
   -moz-transition: 200ms -moz-filter linear;
   -moz-transition: 200ms filter linear;
@@ -144,7 +144,7 @@ html {
   transition: 200ms filter linear, 200ms -webkit-filter linear;
 }
 
-.ma_social:hover a {
+.ma_social img:hover {
   filter: invert(100%);
 }
 
@@ -165,8 +165,19 @@ a:visited {
   text-decoration: none;
 }
 
+a {
+  text-decoration: underline;
+  -webkit-transition: 200ms -webkit-filter linear;
+  -moz-transition: 200ms -moz-filter linear;
+  -moz-transition: 200ms filter linear;
+  -ms-transition: 200ms -ms-filter linear;
+  -o-transition: 200ms -o-filter linear;
+  transition: 200ms linear, 200ms -webkit-filter linear;
+}
+
 a:hover {
   text-decoration: underline;
+  color: white;
 }
 
 a:active {
