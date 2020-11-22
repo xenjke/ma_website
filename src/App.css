@@ -24,6 +24,14 @@ html {
   margin: 0;
 }
 
+@media screen and (max-width: 800px) {
+  body {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
 .gullLogoWrapper {
   height: 400px;
   width: 100%;
